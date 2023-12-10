@@ -14,10 +14,10 @@ RUN npm install
 COPY . .
 
 # Build the Angular app
-RUN npm run build
+# RUN npm run build
 
 # Expose port 8080 to the outside world
 EXPOSE 8080
 
 # Command to run the application
-CMD ["npm", "start"]
+CMD ["npm", "run" , "serve"]
